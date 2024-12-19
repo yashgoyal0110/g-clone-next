@@ -90,11 +90,14 @@ The app contains three main pages:
 2. **Voice Search**  
    - Integrated voice search feature page.
 
-3. **Image Search**  
-   - Users can upload images, and the app will fetch results of the uploaded image.
+3. **Upload popup**
+    - A proper popup for uploading image is design with proper error handling of `invalid urls`
 
-4. **Responsive Design**  
+4. **Image Search**  
+   - Users can upload images, and the app will fetch results of the uploaded image with real time cropping featutres.
+
+5. **Responsive Design**  
    - Tried do design the app as responsive as possible.
 
-5. **Modular Components**  
+6. **Modular Components**  
    - The app is built with modularity in mind, ensuring it is easy to maintain and extend in the future. Each feature is encapsulated in its own component.
