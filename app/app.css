@@ -1,14 +1,23 @@
-.app{
+.app {
     min-height: 100vh;
     background-color: #202124;
     color: #e8eaed;
     font-family: Arial, sans-serif;
+    animation: fadeIn 0.8s ease-in-out; 
   }
   
+  @keyframes fadeIn {
+    0% {
+      opacity: 0.6; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial, sans-serif;
+    font-family: Arial, sans-serif;
   }
   
