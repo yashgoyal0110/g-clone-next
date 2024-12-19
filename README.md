@@ -23,7 +23,7 @@ To set up and run this project locally, follow these steps:
    git clone <https://github.com/yashgoyal0110/g-clone-next.git>
 
 2. Navigate to the project folder:
-    `cd cd google-clone-nextjs`
+    `cd google-clone-nextjs`
 
 3. Install the required dependencies:
     `npm install`
