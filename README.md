@@ -82,6 +82,8 @@ The app contains three main pages:
 3. Results Page `('/results')`: This page displays the search results for an image uploaded by the user.
 
 
+## Features
+
 1. **Search Functionality**  
    - Users can type their queries, and the app will display suggestions dynamically as they type.
 
