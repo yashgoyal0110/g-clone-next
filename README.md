@@ -7,9 +7,6 @@ This project is a Google clone assignment built using Next.js. It replicates Goo
 - [File Structure](#file-structure)
 - [Pages](#pages)
 - [Features](#features)
-- [Libraries Used](#libraries-used)
-- [Components](#components)
-
 ---
 
 ## Installation
@@ -80,6 +77,22 @@ The app contains three main pages:
 
 1. Home Search Page `('/')`: This is the main page of the app where users can enter search queries, view suggestions, and initiate image search or voice search.
 
-2. Voice Search Page `('/speak')`: This page includes the voice search functionality, enabling users to speak their queries.
+2. Voice Search Page `('/speak')`: This page includes the voice search functionality.
 
 3. Results Page `('/results')`: This page displays the search results for an image uploaded by the user.
+
+
+1. **Search Functionality**  
+   - Users can type their queries, and the app will display suggestions dynamically as they type.
+
+2. **Voice Search**  
+   - Integrated voice search feature page.
+
+3. **Image Search**  
+   - Users can upload images, and the app will fetch results of the uploaded image.
+
+4. **Responsive Design**  
+   - Tried do design the app as responsive as possible.
+
+5. **Modular Components**  
+   - The app is built with modularity in mind, ensuring it is easy to maintain and extend in the future. Each feature is encapsulated in its own component.
