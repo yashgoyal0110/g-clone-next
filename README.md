@@ -41,7 +41,7 @@ To set up and run this project locally, follow these steps:
 
 ## File Structure
 
-`
+```
 google-clone-nextjs/
 ├── app/
 │   ├── Context/
@@ -74,4 +74,4 @@ google-clone-nextjs/
 ├── eslint.config.mjs               # ESLint configuration file
 ├── .gitignore                      # Git ignore file
 
-`
+```
