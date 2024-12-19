@@ -85,7 +85,7 @@ The app contains three main pages:
 ## Features
 
 1. **UI Same as og Google**
-    - Tried to design UI design as close as possible of original [google.com](https://www.google.com/)
+    - Tried to design UI as close as possible to original [google.com](https://www.google.com/)
 
 2. **Search Functionality**  
    - Users can type their queries, and the app will display suggestions dynamically as they type.
