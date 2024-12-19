@@ -78,8 +78,8 @@ google-clone-nextjs/
 
 The app contains three main pages:
 
-1. Home Search Page ('/'): This is the main page of the app where users can enter search queries, view suggestions, and initiate image search or voice search.
+1. Home Search Page `('/')`: This is the main page of the app where users can enter search queries, view suggestions, and initiate image search or voice search.
 
-2. Voice Search Page ('/speak'): This page includes the voice search functionality, enabling users to speak their queries.
+2. Voice Search Page `('/speak')`: This page includes the voice search functionality, enabling users to speak their queries.
 
-3. Results Page ('/results'): This page displays the search results for an image uploaded by the user.
+3. Results Page `('/results')`: This page displays the search results for an image uploaded by the user.
