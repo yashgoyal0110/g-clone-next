@@ -84,20 +84,26 @@ The app contains three main pages:
 
 ## Features
 
-1. **Search Functionality**  
+1. **UI Same as og Google**
+    - Tried to design UI design as same as possible of original [google.com](https://www.google.com/)
+
+2. **Search Functionality**  
    - Users can type their queries, and the app will display suggestions dynamically as they type.
 
-2. **Voice Search**  
+3. **Voice Search**  
    - Integrated voice search feature page.
 
-3. **Upload popup**
+4. **Upload popup**
     - A proper popup for uploading image is design with proper error handling of `invalid urls`
 
-4. **Image Search**  
+5. **Image Search**  
    - Users can upload images, and the app will fetch results of the uploaded image with real time cropping featutres.
 
-5. **Responsive Design**  
+6. **Shimmer Effect**
+    - Proper shimmer effect is applied till the images loads
+
+7. **Responsive Design**  
    - Tried do design the app as responsive as possible.
 
-6. **Modular Components**  
+8. **Modular Components**  
    - The app is built with modularity in mind, ensuring it is easy to maintain and extend in the future. Each feature is encapsulated in its own component.
