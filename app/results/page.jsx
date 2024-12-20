@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { AppContext } from "@/app/Context/AppContext.jsx";
 import { useContext, useState, useEffect, useRef } from "react";
 import ResultPageHeader from "@/components/ResultPage/ResultPageHeader";
@@ -7,9 +7,7 @@ import FindImageSource from "@/components/ResultPage/FindImageSource.jsx";
 import ProductGrid from "@/components/ResultPage/ProductGrid.jsx";
 import Cropper from "react-easy-crop";
 import Shimmer from "@/components/ResultPage/Shimmer.jsx";
-import '../../components/ResultPage/ResultPage.css'
-
-
+import "../../components/ResultPage/ResultPage.css";
 
 function ResultPage() {
   const { imageUrl, setCameraClicked, setImageUrl } = useContext(AppContext);
@@ -30,6 +28,8 @@ function ResultPage() {
     console.log("Cropped Area:", croppedArea);
     console.log("Cropped Area Pixels:", croppedAreaPixels);
   };
+
+  // {cropping logic}
 
   const handleResize = (e, corner) => {
     e.preventDefault();
@@ -74,6 +74,7 @@ function ResultPage() {
     });
   };
 
+  // cropping mouse handlers
   const startResize = (e, corner) => {
     e.preventDefault();
     const onMouseMove = (moveEvent) => handleResize(moveEvent, corner);
@@ -110,7 +111,6 @@ function ResultPage() {
   useEffect(() => {
     if (imageUrl) {
       localStorage.setItem("imageUrl", imageUrl);
-      // setImageUrl(imageUrl)
     }
   }, [imageUrl]);
 
@@ -181,6 +181,8 @@ function ResultPage() {
             )}
           </div>
 
+{/* toggle-bar */}
+
           <div className="toggle-bar">
             <div
               className={!clickedSearch ? "Search-text" : "clicked-toggle"}
@@ -205,16 +207,20 @@ function ResultPage() {
           </div>
         </div>
         <div className="results-container">
-        {loading ? (
+          {loading ? (
             <Shimmer />
           ) : isValidImage ? (
             <ProductGrid />
           ) : (
             <div className="no-results">
-              <img src="/images/ErrorImage.png" alt="Error: Invalid image" style={{
-                width: '45vw',
-                height: '100vh'
-              }}></img>
+              <img
+                src="/images/ErrorImage.png"
+                alt="Error: Invalid image"
+                style={{
+                  width: "45vw",
+                  height: "100vh",
+                }}
+              ></img>
             </div>
           )}
           <FeedbackFooter />

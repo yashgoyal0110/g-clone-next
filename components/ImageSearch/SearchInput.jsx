@@ -10,7 +10,7 @@ function SearchInput() {
 
   function handleSearchButton() {
     if (inputVal) {
-      if (inputVal.startsWith("http://") || inputVal.startsWith("https://")) {
+      if (inputVal.startsWith("http://") || inputVal.startsWith("https://")) {   // input url validation
         setImageUrl(inputVal);
        router.push("/results");
         setCameraClicked(false);

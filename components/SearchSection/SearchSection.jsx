@@ -52,7 +52,7 @@ const SearchSection = () => {
             )}`
           );
           let result = await response.json();
-          const suggestions = result.map((item, index) => ({
+          const suggestions = result.map((item, index) => ({   // managing api data
             id: index + 1,
             name: item.show.name,
           }));
