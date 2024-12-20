@@ -17,6 +17,7 @@ function ResultPage() {
   const [clickedText, setClickedText] = useState(false);
   const [clickedTranslate, setClickedTranslate] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [isValidImage, setIsValidImage] = useState(true);
 
   const [crop, setCrop] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -134,50 +135,6 @@ function ResultPage() {
     setClickedTranslate(true);
   }
 
-  // return (
-  //   <div className="search-results-main">
-  //     <ResultPageHeader />
-  //     <div className="left-and-right-container">
-  //       <div className="left-side-container">
-  //         <FindImageSource />
-  //         <div className="reference-image-container">
-  //           <img src={imageUrl} className="reference-image"></img>
-  //         </div>
-
-  //         <div className="toggle-bar">
-  //           <div
-  //             className={!clickedSearch ? "Search-text" : "clicked-toggle"}
-  //             onClick={() => handleSearchText()}
-  //           >
-  //             Search
-  //           </div>
-  //           <div
-  //             className={!clickedText ? "Text-text" : "clicked-toggle"}
-  //             onClick={() => handleText()}
-  //           >
-  //             Text
-  //           </div>
-  //           <div
-  //             className={
-  //               !clickedTranslate ? "Translate-text" : "clicked-toggle"
-  //             }
-  //             onClick={() => handleTranslateText()}
-  //           >
-  //             Translate
-  //           </div>
-  //         </div>
-  //       </div>
-  //       <div className="results-container">
-  //         {loading ? (
-  //           <ClockLoader color="#1f0ee8" size={60} className="loader" />
-  //         ) : (
-  //           <ProductGrid />
-  //         )}
-  //         <FeedbackFooter />
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
   return (
     <div className="search-results-main">
       <ResultPageHeader />
@@ -219,6 +176,7 @@ function ResultPage() {
                 src={imageUrl}
                 className="reference-image"
                 onClick={() => setShowCropper(true)}
+                onError={() => setIsValidImage(false)}
               />
             )}
           </div>
@@ -247,7 +205,18 @@ function ResultPage() {
           </div>
         </div>
         <div className="results-container">
-          {loading ? <Shimmer /> : <ProductGrid />}
+        {loading ? (
+            <Shimmer />
+          ) : isValidImage ? (
+            <ProductGrid />
+          ) : (
+            <div className="no-results">
+              <img src="/images/ErrorImage.png" alt="Error: Invalid image" style={{
+                width: '45vw',
+                height: '100vh'
+              }}></img>
+            </div>
+          )}
           <FeedbackFooter />
         </div>
       </div>
