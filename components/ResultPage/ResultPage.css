@@ -129,7 +129,7 @@ body {
   height: 515px;
   width: 620px;
   position: absolute;
-  max-height: 515px;
+  max-height: 500px;
   max-width: 620px;
   top: 11%;
   z-index: 1000;
@@ -140,7 +140,6 @@ body {
   max-width: 620px;
   object-position: center;
   cursor: all-scroll;
-  /* position: relative; */
 }
 
 .toggle-bar {
@@ -190,10 +189,9 @@ body {
   background-color: #ffffff;
   width: 50vw;
   height: 92vh;
-  /* height: 90vh; */
-  /* height: 770px; */
   margin-top: 0px;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .feedback-footer {
@@ -201,7 +199,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  /* width: 800px; */
   height: 45px;
   width: 50vw;
   gap: 200px;
