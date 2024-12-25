@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
-  /* position: relative; */
 }
 .header-search-results {
   display: flex;

@@ -1,7 +1,6 @@
 "use client"
 import { useRouter } from "next/navigation";
-// import { AppContext } from '../../main.jsx';
-import { useContext} from "react";
+import { useContext, useEffect} from "react";
 import ErrorDiv from "../ErrorDiv/ErrorDiv.jsx";
 import { AppContext } from "@/app/Context/AppContext.jsx";
 function DropZone({
@@ -15,6 +14,11 @@ function DropZone({
 {
   const router = useRouter();
   const {showErrorDiv}=  useContext(AppContext);
+  useEffect(()=>{
+    if (selectedImage) {
+      router.push('/results');
+    }
+  },[selectedImage, router])
 
   return (
     <div
@@ -25,10 +29,10 @@ function DropZone({
       onDrop={handleDrop}
       
     >
-      {selectedImage ? (      
+      {/* {selectedImage ? (      
         router.push('/results')
 
-      ) : (
+      ) : ( */}
         <>
         <div className="drop-text-and-icon">
           {showErrorDiv && <ErrorDiv />}
@@ -50,7 +54,7 @@ function DropZone({
           </p>
           </div>
         </>
-       )} 
+       {/* )}  */}
     </div>
   );
 }

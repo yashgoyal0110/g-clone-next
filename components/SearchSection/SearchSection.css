@@ -1,14 +1,11 @@
 .search-section-wrapper{
   position: relative;
   top: 13vh;
-  /* left: 33vw; */
 }
 .search-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* position: absolute; */
-  
+  align-items: center;  
 }
 
 .google-logo {
@@ -24,11 +21,7 @@
   color: #e8eaed;
 }
 .image-search-div{
-  /* position: absolute; */
    width: 590px;
-  /* top: 90%; */
-  /* left: 20% */
-  /* left: -10%; */
 }
 
 .search-box {
@@ -136,7 +129,6 @@ input {
   margin-top: -12%;
   padding-top: 45px;
   z-index: 1;
-  /* max-width: 120%; */
 }
 
 @media screen and (max-width: 550px) {
