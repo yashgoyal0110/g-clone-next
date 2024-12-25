@@ -79,6 +79,7 @@ const SearchSection = () => {
   return (
     <>
       <Header />
+      <div className="search-section-wrapper">
       <div className="search-section">
         <img src="/images/logo.png" alt="Google" className="google-logo" />
         {cameraClicked ? (
@@ -170,6 +171,7 @@ const SearchSection = () => {
             ) : null}
           </>
         )}
+      </div>
       </div>
       <Footer />
     </>
