@@ -1,7 +1,9 @@
 'use client'
 import { MdOutlineFileUpload } from "react-icons/md";
 import { CgMenuGridO } from "react-icons/cg";
+import { useRouter } from "next/router";
 import './ResultPage.css'
+import { useRouter } from "next/router";
 
 function ResultPageHeader() {
   return (
@@ -10,6 +12,7 @@ function ResultPageHeader() {
               <img
                 src="/images/googleLogo.png"
                 className="google-logo-header"
+                onClick={()=>router.push('/')}
               ></img>
             </div>
             <div className="right-header">
