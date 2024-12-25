@@ -438,9 +438,8 @@ body {
   .product-grid {
     grid-template-columns: repeat(1, minmax(300px, 1fr));
     left: 55px;
-    /* flex-direction: column; */
-  }
-}
+    flex-direction: column;
+}}
 /* responsive css */
 
  .cropper-wrapper {

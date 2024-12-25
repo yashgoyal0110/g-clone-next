@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { useRouter } from "next/navigation";
-import { useContext, useEffect} from "react";
+import { useContext, useEffect } from "react";
 import ErrorDiv from "../ErrorDiv/ErrorDiv.jsx";
 import { AppContext } from "@/app/Context/AppContext.jsx";
 function DropZone({
@@ -10,15 +10,14 @@ function DropZone({
   handleFileChange,
   selectedImage,
   inputRef,
-}) 
-{
+}) {
   const router = useRouter();
-  const {showErrorDiv}=  useContext(AppContext);
-  useEffect(()=>{
+  const { showErrorDiv } = useContext(AppContext);
+  useEffect(() => {
     if (selectedImage) {
-      router.push('/results');
+      router.push("/results");
     }
-  },[selectedImage, router])
+  }, [selectedImage, router]);
 
   return (
     <div
@@ -27,20 +26,15 @@ function DropZone({
       onDragLeave={handleDrag}
       onDragOver={handleDrag}
       onDrop={handleDrop}
-      
     >
-      {/* {selectedImage ? (      
-        router.push('/results')
-
-      ) : ( */}
-        <>
+      <>
         <div className="drop-text-and-icon">
           {showErrorDiv && <ErrorDiv />}
           <div className="image-icon">
             <img src="/images/dropImage.png"></img>
           </div>
           <p>
-            <span className="drop-text">Drag an image here or{" "}</span>
+            <span className="drop-text">Drag an image here or </span>
             <label className="upload-label">
               upload a file
               <input
@@ -52,9 +46,8 @@ function DropZone({
               />
             </label>
           </p>
-          </div>
-        </>
-       {/* )}  */}
+        </div>
+      </>
     </div>
   );
 }
