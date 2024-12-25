@@ -131,12 +131,12 @@ body {
   position: absolute;
   max-height: 505px;
   max-width: 620px;
-  top: 11%;
+  top: 12%;
   z-index: 1000;
 }
 
 .reference-image {
-  max-height: 515px;
+  max-height: 505px;
   max-width: 620px;
   object-position: center;
   cursor: all-scroll;
@@ -328,9 +328,6 @@ body {
   .feedback-footer {
     display: none;
   }
-  /* .cropper-wrapper{
-    width: 200px;
-  } */
   .reference-image-container {
     max-width: 500px;
   }
@@ -419,7 +416,6 @@ body {
     background-color: white;
   }
   .left-side-container {
-    /* display: none; */
     height: 50vh;
     width: 100vw;
   }
@@ -449,8 +445,8 @@ body {
 
  .cropper-wrapper {
   position: relative;
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 100%;
   max-height:515px ;
   max-width:620px ;
 }
