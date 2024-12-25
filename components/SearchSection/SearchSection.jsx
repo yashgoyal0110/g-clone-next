@@ -70,10 +70,10 @@ const SearchSection = () => {
   }, [searchQuery]);
 
   function crossButtonHandler() {
-    setSearchQuery("");
-    
     setFilteredSuggestions(mockData);
     setShowSuggestions(true)
+    setSearchQuery("");
+   
   }
 
   return (
@@ -111,6 +111,7 @@ const SearchSection = () => {
                   <div
                     onClick={() => crossButtonHandler()}
                     className="cross-btn-container"
+                    title="Clear"
                   >
                     <RxCross2 className="cross-icon-search" />
                     <div className="bar">|</div>
