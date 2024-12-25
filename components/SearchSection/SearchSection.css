@@ -1,9 +1,10 @@
 .search-section {
-  margin-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  position: absolute;
+  top: 20%;
+  left: 33vw;
 }
 
 .google-logo {
@@ -13,10 +14,16 @@
 }
 
 .search-container {
-  width: 100%;
+  width: 120%;
   max-width: 584px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   color: #e8eaed;
+}
+.image-search-div{
+  position: absolute;
+  top: 90%;
+  /* left: 20% */
+  /* left: -10%; */
 }
 
 .search-box {
@@ -124,6 +131,7 @@ input {
   margin-top: -12%;
   padding-top: 45px;
   z-index: 1;
+  /* max-width: 120%; */
 }
 
 @media screen and (max-width: 550px) {

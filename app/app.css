@@ -1,8 +1,10 @@
 .app {
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     background-color: #202124;
     color: #e8eaed;
     font-family: Arial, sans-serif;
+    position: relative;
   }
 
   * {

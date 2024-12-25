@@ -71,7 +71,9 @@ const SearchSection = () => {
 
   function crossButtonHandler() {
     setSearchQuery("");
+    
     setFilteredSuggestions(mockData);
+    setShowSuggestions(true)
   }
 
   return (
@@ -80,7 +82,9 @@ const SearchSection = () => {
       <div className="search-section">
         <img src="/images/logo.png" alt="Google" className="google-logo" />
         {cameraClicked ? (
+          <div className="image-search-div">
           <ImageSearch />
+          </div>
         ) : (
           <>
             <div className="search-container">
