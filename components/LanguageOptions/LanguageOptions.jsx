@@ -4,7 +4,7 @@ import "./LanguageOptions.css";
 function LanguageOptions() {
   return (
     <div className="language-options">
-      Google offered in:
+      Google offered in: 
       <a href="#">हिन्दी</a>
       <a href="#">বাংলা</a>
       <a href="#">తెలుగు</a>
